@@ -17,7 +17,7 @@ void printInfo(List L){
 	/**
 	* PR : menampilkan informasi ID, nama, dan lokasi file
 	*/
-    adr Q = First(L);
+    address Q = First(L);
     do
     {
         cout<<"Name     : "<<Info(Q).name<<endl;
@@ -28,7 +28,7 @@ void printInfo(List L){
 }
 
 
-void playSong(adr P){
+void playSong(address P){
 	/**
 	* PR : memainkan lagu yang ditunjuk oleh pointer P
 	*/
@@ -40,7 +40,7 @@ void playSong(adr P){
 }
 
 
-void playNext(adr &P){
+void playNext(address &P){
 	/**
 	* PR : memainkan file lagu pada elemen setelah P
 	* FS : P menunjuk next lagu dan lagu dimainkan
@@ -50,7 +50,7 @@ void playNext(adr &P){
 }
 
 
-void playPrev(adr &P){
+void playPrev(address &P){
 	/**
 	* PR : memainkan file lagu pada elemen sebelum P
 	* FS : P menunjuk prev lagu dan lagu dimainkan
@@ -68,7 +68,7 @@ void shuffleList(List &L){
 	* FS : isi (elemen) dari list teracak
 	*/
 	//-------------your code here-------------
-    adr P = L.first;
+    address P = L.first;
     int numRand = rand() % 10 + 1;
     for(int i=1; i <= numRand; i++)
     {
@@ -98,7 +98,7 @@ void playRepeat(List &L, int n){
 	*      dari lagu pertama hingga terakhir sebanyak n kali
 	*/
 	//-------------your code here-------------
-    adr P = L.first;
+    address P = L.first;
     int totData = countElm(L);
     playSong(P);
     for(int i=1; i < totData*n; i++)
@@ -117,7 +117,7 @@ void deleteSong(List &L){
 	*/
 	//-------------your code here-------------
     int number;
-	adr P;
+	address P;
     cout <<"Pilih Posisi    : 1. First"<<endl
              <<"                  2. After"<<endl
              <<"                  3. Last"<<endl
@@ -127,7 +127,7 @@ void deleteSong(List &L){
             cout << "Lagu Berhasil Dihapus";
         }
         else if (number == 2) {
-            adr R = new elmlist;
+            address R = new elmlist;
             cout << "Masukkan ID Element Sebelum Element Yang Akan Dihapus : ";
             cin >> R->info.ID;
             deleteAfter(L,P,R);

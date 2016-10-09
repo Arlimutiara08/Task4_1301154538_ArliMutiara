@@ -79,3 +79,20 @@
 1475995580 source:e:\dedep\kuliah\tingkat 2\semester 3\struktur data\task 4\asd_task_4\player.cpp
 	"player.h"
 
+1476031773 source:c:\users\devi\desktop\asd_task_4\player.cpp
+	"player.h"
+
+1476031732 c:\users\devi\desktop\asd_task_4\player.h
+	"list.h"
+
+1476031700 c:\users\devi\desktop\asd_task_4\list.h
+	<string>
+	<windows.h>
+	<iostream>
+
+1476031700 source:c:\users\devi\desktop\asd_task_4\list.cpp
+	"list.h"
+
+1476031749 source:c:\users\devi\desktop\asd_task_4\main.cpp
+	"player.h"
+

@@ -10,13 +10,13 @@ void inputNewSong(infotype &);
 void printInfo(List );
 // output the songs in the list
 
-void playSong(adr P);
+void playSong(address P);
 // play song from element P
 
-void playNext(adr &P);
+void playNext(address &P);
 // play the next song from element P
 
-void playPrev(adr &P);
+void playPrev(address &P);
 // play the previous song from element P
 
 void shuffleList(List &);
